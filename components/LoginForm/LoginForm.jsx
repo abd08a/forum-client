@@ -26,7 +26,7 @@ const LoginForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/users/login",
+        `${process.env.SERVER_URL}/users/login`,
         loginBody
       );
       if (response.status === 200) {
