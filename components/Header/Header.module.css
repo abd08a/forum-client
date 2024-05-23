@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: #ebc49f;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
