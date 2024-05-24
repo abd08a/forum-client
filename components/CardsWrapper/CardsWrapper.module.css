@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 768px) {
   .cardsWrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 

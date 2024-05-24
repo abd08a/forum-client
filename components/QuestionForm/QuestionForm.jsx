@@ -27,17 +27,19 @@ const QuestionForm = () => {
     setError(false);
 
     try {
+      const token = cookie.get("jwt_token");
+
       const headers = {
-        authorization: cookie.get("jwt_token"),
+        Authorization: token, // Set the token in the Authorization header
       };
 
-      const response = await axios.post(`${process.env.SERVER_URL}/question`, {
-        headers,
-      });
-
-      if (response.status === 200) {
+      const response = await axios.post(
+        `${process.env.SERVER_URL}/question`,
+        questionBody,
+        { headers }
+      );
+      if (response.status === 201) {
         setBadData(false);
-        cookie.set("jwt_token", response.data.jwt_token);
         router.push("/");
       }
 

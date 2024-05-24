@@ -7,6 +7,7 @@ const CardsWrapper = ({ questions }) => {
     <div className={styles.cardsWrapper}>
       {questions.map((question) => (
         <Card
+          id={question.id}
           key={question.id}
           theme={question.theme}
           question={question.question}
