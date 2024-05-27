@@ -7,6 +7,7 @@
 
 // const Index = () => {
 //   const [questions, setQuestions] = useState(null);
+
 //   const fetchQuestions = async () => {
 //     try {
 //       const headers = {
@@ -79,8 +80,10 @@ import { links } from "../constants/links";
 import axios from "axios";
 import cookies from "js-cookie";
 import CardsWrapper from "../components/CardsWrapper/CardsWrapper";
+import { useRouter } from "next/router";
 
 const Index = () => {
+  const router = useRouter();
   const [questions, setQuestions] = useState([]);
 
   const fetchQuestions = async () => {

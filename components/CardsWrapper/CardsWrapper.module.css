@@ -1,9 +1,13 @@
-.cardsWrapper {
+/* .cardsWrapper {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 2rem;
   margin: 2rem 1rem;
+}
+
+.cardsWrapper .card:hover {
+  scale: 1.03;
 }
 
 @media only screen and (max-width: 768px) {
@@ -16,4 +20,43 @@
   .cardsWrapper {
     grid-template-columns: 1fr;
   }
+} */
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #f9f9f9;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.answers {
+  margin-top: 16px;
+}
+
+.infoBox {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
 }
