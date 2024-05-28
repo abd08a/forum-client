@@ -4,7 +4,9 @@ import styles from "./Header.module.css";
 const Header = ({ logo, links }) => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.logo}>{logo}</div>
+      <a href="http://localhost:3001/" className={styles.logo}>
+        {logo}
+      </a>
 
       <nav>
         <ul className={styles.links}>

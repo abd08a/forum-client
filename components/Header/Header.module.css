@@ -20,3 +20,8 @@
   color: var(--primary-text-color);
   text-decoration: none;
 }
+
+.wrapper a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
